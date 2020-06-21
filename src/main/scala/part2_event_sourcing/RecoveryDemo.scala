@@ -4,7 +4,7 @@ import akka.actor.{ActorLogging, ActorSystem, Props}
 import akka.persistence.{PersistentActor, Recovery, RecoveryCompleted, SnapshotSelectionCriteria}
 
 object RecoveryDemo extends App {
-
+  // 
   case class Command(contents: String)
   case class Event(id: Int, contents: String)
 
